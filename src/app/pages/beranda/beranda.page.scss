@@ -1,0 +1,136 @@
+.paranaisLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+ion-content {
+    --ion-background-color: rgb(204, 236, 200);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+    border-radius: 75%;
+}
+
+.room-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.inner-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:8px;
+    border-radius: 10px;
+    text-align: justify;
+    color: whitesmoke;
+    width: 90%;
+    max-width: 700px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.solo-room {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+}
+.solo-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.couple-room {
+    background-image: url('../../../assets/img/room/room-3.jpg'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Atur ukuran gambar agar menutupi tombol */
+    background-repeat: no-repeat; /* Jangan mengulang gambar */
+    width: 150px; /* Atur lebar tombol */
+    height: 150px; /* Atur tinggi tombol */
+    border-radius: 50%; /* Atur border-radius agar tombol menjadi lingkaran */
+    border: none; 
+}
+
+.deluxe-room{
+    background-image: url('../../../assets/img/room/room-4.jpg'); /* Ganti dengan path gambar Anda */
+    background-size: cover; /* Atur ukuran gambar agar menutupi tombol */
+    background-repeat: no-repeat; /* Jangan mengulang gambar */
+    width: 150px; /* Atur lebar tombol */
+    height: 150px; /* Atur tinggi tombol */
+    border-radius: 50%; /* Atur border-radius agar tombol menjadi lingkaran */
+    border: none; 
+}
+
+.image-button {
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .image-button ion-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .small-card{
+    width: 200px;
+    margin: 10px auto;
+    padding: 10px;
+  }
+  .card-image{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .pesan-button{
+    margin-bottom: -15px;
+    margin-right: -70px;
+
+  }
+
+  .velvet-room{
+    --background: #000;
+    --color: #fff;
+  }

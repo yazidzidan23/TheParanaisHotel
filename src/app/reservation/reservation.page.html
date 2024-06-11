@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Hotel Reservation
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Check-in Date</ion-label>
+      <ion-datetime display-format="DD/MM/YYYY" [(ngModel)]="checkInDate"></ion-datetime>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Check-out Date</ion-label>
+      <ion-datetime display-format="DD/MM/YYYY" [(ngModel)]="checkOutDate"></ion-datetime>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Number of Guests</ion-label>
+      <ion-input type="number" [(ngModel)]="numberOfGuests"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Room Type</ion-label>
+      <ion-select [(ngModel)]="selectedRoomType">
+        <ion-select-option value="standard">Standard</ion-select-option>
+        <ion-select-option value="deluxe">Deluxe</ion-select-option>
+        <ion-select-option value="suite">Suite</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block" color="primary" (click)="reserveRoom()">Reserve Room</ion-button>
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "the paranais hotel",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
