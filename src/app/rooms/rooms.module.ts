@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SoloRoomPageRoutingModule } from './solo-room-routing.module';
+import { RoomsPageRoutingModule } from './rooms-routing.module';
 
-import { SoloRoomPage } from './solo-room.page';
+import { RoomsPage } from './rooms.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SoloRoomPageRoutingModule
+    RoomsPageRoutingModule
   ],
-  declarations: [SoloRoomPage]
+  declarations: [RoomsPage]
 })
-export class SoloRoomPageModule {}
+export class RoomsPageModule {}

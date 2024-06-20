@@ -20,16 +20,20 @@ const routes: Routes = [
     loadChildren: () => import('./akun/akun.module').then(m => m.AkunPageModule)
   },
   {
-    path: 'solo-room',
-    loadChildren: () => import('./solo-room/solo-room.module').then( m => m.SoloRoomPageModule)
-  },
-  {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'food',
     loadChildren: () => import('./pages/food/food.module').then( m => m.FoodPageModule)
+  },
+  {
+    path: 'rooms',
+    loadChildren: () => import('./rooms/rooms.module').then(m => m.RoomsPageModule)
+  },
+  {
+    path: 'reservation',
+    loadChildren: () => import('./reservation/reservation.module').then(m => m.ReservationPageModule)
   },
 ];
 
