@@ -24,16 +24,28 @@ const routes: Routes = [
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'food',
-    loadChildren: () => import('./pages/food/food.module').then( m => m.FoodPageModule)
-  },
-  {
     path: 'rooms',
     loadChildren: () => import('./rooms/rooms.module').then(m => m.RoomsPageModule)
   },
   {
-    path: 'reservation',
+    path: 'reservation/:id',
     loadChildren: () => import('./reservation/reservation.module').then(m => m.ReservationPageModule)
+  },
+  {
+    path: 'payment',
+    loadChildren: () => import('./payment/payment.module').then( m => m.PaymentPageModule)
+  },
+  {
+    path: 'booked-rooms',
+    loadChildren: () => import('./booked-rooms/booked-rooms.module').then( m => m.BookedRoomsPageModule)
+  },
+  {
+    path: 'food-list',
+    loadChildren: () => import('./food-list/food-list.module').then( m => m.FoodListPageModule)
+  },
+  {
+    path: 'food-reservation/:id',
+    loadChildren: () => import('./food-reservation/food-reservation.module').then( m => m.FoodReservationPageModule)
   },
 ];
 

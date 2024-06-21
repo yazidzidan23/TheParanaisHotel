@@ -27,7 +27,7 @@ import { TabsPage } from './tabs.page';
             children: [
               {
                 path: '',
-                loadChildren: () => import('../pages/food/food.module').then(m => m.FoodPageModule)
+                loadChildren: () => import('../food-list/food-list.module').then(m =>m.FoodListPageModule)
               }
             ]
           },

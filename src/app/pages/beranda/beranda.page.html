@@ -1,4 +1,23 @@
-<ion-content class="ion-padding">
-  <ion-img class="paranaisLogo" alt="logo" src="../../../assets/img/about/Desain_tanpa_judul__1_-removebg-preview.png"></ion-img>
-  <ion-button expand="full" (click)="goToRooms()">View Rooms</ion-button>
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title color="light">Halo, Nais Friends!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let room of rooms">
+      <ion-card>
+        <img [src]="room.imageUrl" alt="{{ room.name }}" />
+        <ion-card-header>
+          <ion-card-title>{{ room.name }}</ion-card-title>
+          <ion-card-subtitle>{{ room.price | currency: 'IDR' }}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+          <p>{{ room.description }}</p>
+          <ion-button color="success" expand="full" (click)="goToReservation(room.id)">PESAN</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
 </ion-content>

@@ -1,18 +1,44 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button color="light" defaultHref="rooms">back</ion-back-button>
+      <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Reservation</ion-title>
+    <ion-title>Reservasi Kamar</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div *ngIf="roomId !== null; else noRoomSelected">
-    <h2>Reservation for Room ID: {{ roomId }}</h2>
-    <!-- Reservation form and details go here -->
+  <div *ngIf="roomDetails" class="ion-padding">
+    <ion-card>
+      <img [src]="roomDetails.imageUrl" alt="{{ roomDetails.name }}" />
+      <ion-card-header>
+        <ion-card-title>{{ roomDetails.name }}</ion-card-title>
+        <ion-card-subtitle>{{ roomDetails.price | currency: 'IDR' }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <p>{{ roomDetails.description }}</p>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-list>
+      <ion-item>
+        <ion-label position="stacked">Nama</ion-label>
+        <ion-input type="text" placeholder="Masukkan nama Anda"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="email" placeholder="Masukkan email Anda"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Tanggal Check-In</ion-label>
+        <ion-datetime display-format="DD MMM YYYY" placeholder="Pilih tanggal"></ion-datetime>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Tanggal Check-Out</ion-label>
+        <ion-datetime display-format="DD MMM YYYY" placeholder="Pilih tanggal"></ion-datetime>
+      </ion-item>
+    </ion-list>
+
+    <ion-button expand="full" (click)="goToPayment()">Reservasi Sekarang</ion-button>
   </div>
-  <ng-template #noRoomSelected>
-    <h2>No room selected for reservation.</h2>
-  </ng-template>
 </ion-content>
