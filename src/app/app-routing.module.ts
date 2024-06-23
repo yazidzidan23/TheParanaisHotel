@@ -47,6 +47,22 @@ const routes: Routes = [
     path: 'food-reservation/:id',
     loadChildren: () => import('./food-reservation/food-reservation.module').then( m => m.FoodReservationPageModule)
   },
+  {
+    path: 'food-payment',
+    loadChildren: () => import('./food-payment/food-payment.module').then( m => m.FoodPaymentPageModule)
+  },
+  {
+    path: 'ordered-food',
+    loadChildren: () => import('./ordered-food/ordered-food.module').then( m => m.OrderedFoodPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
 ];
 
 @NgModule({

@@ -48,9 +48,5 @@ export class FoodReservationPage implements OnInit {
       console.error('ID parameter not found in route.');
     }
   }
-
-  goToFoodPayment(foodId: number) {
-    this.navCtrl.navigateForward(`/food-payment/${foodId}`);
-  }
   
 }

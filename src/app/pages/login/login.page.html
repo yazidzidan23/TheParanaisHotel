@@ -35,7 +35,7 @@
             <h4 style="padding-left: 20px; margin-top: 10px;">Please Provide Password</h4>
           </ion-text>
         </div>
-        <p id="forgetPassword" (click)="goToForget()"> Forget Password</p>
+        <p id="forgetPassword" (click)="goToForget()"> Forgot Password?</p>
         <div class="btn">
           <ion-button (click)="goToBeranda()" [disabled]="loginForm.invalid">Login</ion-button>
         </div>
@@ -43,10 +43,8 @@
       <div class="navigator">
         <p (click)="goToRegister()">Don't have an Account ? Register Now</p>
       </div>
-      <p id="media"> Or Login using Social Media</p>
+      <p id="media"> Or Login using Google</p>
       <div class="socialMedia">
-        <ion-icon name="logo-facebook" (click)="facebookLogin()"></ion-icon>
-        <ion-icon name="logo-twitter" (click)="twitterLogin()"></ion-icon>
         <ion-icon name="logo-google" (click)="gmailLogin()"></ion-icon>
       </div>
     </div>

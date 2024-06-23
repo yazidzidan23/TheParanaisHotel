@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-back-button></ion-back-button>
+      <ion-back-button defaultHref="tabs/food-list"></ion-back-button>
     </ion-buttons>
     <ion-title>Pesan Makanan</ion-title>
   </ion-toolbar>
@@ -18,5 +18,5 @@
       <p><strong>Harga:</strong> {{ selectedFood.price | currency: 'IDR' }}</p>
     </ion-card-content>
   </ion-card>
-  <ion-button expand="full" color="primary">Lanjutkan Pemesanan</ion-button>
+  <ion-button expand="full" color="primary" [routerLink]="['/food-payment']">Lanjutkan Pemesanan</ion-button>
 </ion-content>

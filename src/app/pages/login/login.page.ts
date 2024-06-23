@@ -27,15 +27,7 @@ export class LoginPage implements OnInit {
   }
   goToForget() {
     console.log("Forget");
-    this.router.navigate(['/forget-password']);
-  }
-  facebookLogin() {
-    console.log("Facebook");
-    this.router.navigate(['setting']);
-  }
-  twitterLogin() {
-    console.log("Twitter");
-    this.router.navigate(['setting']);
+    this.router.navigate(['/forgot-password']);
   }
   gmailLogin() {
     console.log("Gmail");
